@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bricolage Grotesque', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 30px;
   background-color: rgb(29, 0, 56);
   color: rgb(245, 230, 255);
@@ -12,6 +12,23 @@ span {
 img {
  border: 3px solid blueviolet;
  border-radius: 20px;
+}
+
+.dark-mode-btn {
+  background-color: blueviolet;
+  color: rgb(245, 230, 255);
+  border: 2px solid rgb(245, 230, 255);
+  border-radius: 20px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.dark-mode-btn:hover {
+  background-color: transparent;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  cursor: pointer;
 }
 
 #heading-1 {
@@ -37,4 +54,12 @@ img {
   border-radius: 20px;
   margin-top: 8px;
   padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pic-btn:hover {
+  background-color: transparent;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  cursor: pointer;
 }

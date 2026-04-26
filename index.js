@@ -1,3 +1,9 @@
 function darkMode() {
-  darkModeBtn = document.querySelector(".dark-mode-btn");
+  let theme = document.getElementById("theme-style");
+  
+  if (theme.getAttribute("href") === "index.css") {
+    theme.setAttribute("href", "darkmode.css");
+  } else {
+    theme.setAttribute("href", "index.css");
+  }
 }
