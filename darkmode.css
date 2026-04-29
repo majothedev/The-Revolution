@@ -1,12 +1,22 @@
-body {
-  font-family: 'Bricolage Grotesque', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 30px;
-  background-color: rgb(25, 0, 45);
-  color: rgb(245, 230, 255);
+
+/* BASE STYLES */
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Bricolage Grotesque', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(25, 0, 45);
+  color: rgb(245, 230, 255);
+  margin: 30px;
+}
+
+span {
+  color: blueviolet;
+}
+
+/* LISTS STYLES */
 ul {
-  list-style-position: inside;
   list-style: none;
 }
 
@@ -15,28 +25,119 @@ ol {
   list-style: none;
 }
 
-li {
+/* li {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px
+} */
+
+.lists {
   text-align: center;
   justify-content: center;
   align-items: center;
   margin-right: 35px
 }
 
+/* LINK STYLES */
 a {
   text-decoration: none;
   color: rgb(245, 230, 255);
 }
 
 
-span {
-  color: blueviolet;
+
+/* HEADER & NAV */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.header {
+  background-color: rgb(165, 65, 255);
+  border-radius: 4rem;
+  padding: 1rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  box-shadow: 0 2px 16px hsla(220, 90%, 8%, 0.3);
+  overflow: hidden;
+  transition: width 0.4s;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo, 
+.nav__link {
+  color: rgb(250, 245, 255);
+  white-space: nowrap;
+  transition: color 0.4s, opacity 0.4s;
+}
+
+.nav__logo:hover, 
+.nav__link:hover {
+  color: rgb(25, 0, 45);
+}
+
+.nav__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding-left: 0;
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  color: rgb(250, 245, 255);
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: rgb(250, 245, 255);
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav__button {
+  background-color: rgb(25, 0, 45);
+  color: rgb(250, 245, 255);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  margin-inline: auto;
+}
+
+.nav__button:hover {
+  color: rgb(25, 0, 45);
+  background-color: rgb(245, 235, 255);
+}
+
+/* IMAGE */
 img {
  border: 3px solid blueviolet;
  border-radius: 20px;
 }
 
+
+/* DARK MODE BUTTON */
 .dark-mode-btn {
   background-color: blueviolet;
   color: rgb(245, 230, 255);
@@ -54,22 +155,9 @@ img {
   cursor: pointer;
 }
 
-#heading-1 {
-  margin-bottom: 0px;
-}
 
-.heading-2 {
-  margin-top: 0px;
-}
 
-.role {
-  margin-bottom: 0px;
-}
-
-.experience {
-  margin-top: 0px;
-}
-
+/* DOWNLOAD PICTURE BUTTON */
 .pic-btn {
   background-color: blueviolet;
   color: rgb(245, 230, 255);
@@ -87,17 +175,98 @@ img {
   cursor: pointer;
 }
 
-/* HEADER & NAV */
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
+
+/* HOME HEADINGS */
+.home-section {
+  margin-top: 90px;
 }
 
-.header {
-  /* background-color: rgb(245, 230, 255); */
-  color: rgb(25, 0, 45);
-  text-decoration: none;
+#heading-1 .role {
+  margin-bottom: 0px;
+}
+
+.heading-2 .experience {
+  margin-top: 0px;
+}
+
+
+
+/* NAVIGATION FOR MOBILE DEVICES */
+@media (width <= 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: -120%;
+    left: 1rem;
+    right: 1rem;
+    background-color: rgb(165, 65, 255);
+    padding-block: 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px hsla(220, 90%, 8%, 0.3);
+    z-index: 100;
+    transition: top 0.4s;
+  }
+
+  /* SHOW MENU */
+  .show-menu {
+    top: 1rem;
+  }
+}
+
+/* FOR MEDIUM DEVICES */
+@media (width >= 540px) {
+  .header,
+  .nav__menu {
+    width: 500px;
+    margin-inline: auto;
+  }
+}
+
+/* FOR LARGE DEVICES */
+@media (width >= 1150px) {
+  .header {
+    width: 800px;
+    padding: 1.625rem 1.5rem;
+    top: 2rem;
+  }
+
+  .nav__logo {
+    position: relative;
+    z-index: 10;
+  }
+
+  .nav__menu {
+    width: initial;
+    margin: 0;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  
+/* SCROLL NAV */
+  .scroll-nav {
+    width: 500px;
+  }
+  .scroll-nav .nav__link {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .scroll-nav .nav__button {
+    opacity: 1;
+    pointer-events: initial;
+  }
 }
