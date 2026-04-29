@@ -5,6 +5,29 @@ body {
   color: rgb(245, 230, 255);
 }
 
+ul {
+  list-style-position: inside;
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px
+}
+
+a {
+  text-decoration: none;
+  color: rgb(245, 230, 255);
+}
+
+
 span {
   color: blueviolet;
 }

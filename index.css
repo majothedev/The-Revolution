@@ -1,7 +1,81 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Bricolage Grotesque', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(250, 245, 255);
+  /* background-color: rgb(250, 245, 255); */
+  background-color: ;
   margin: 30px;
+}
+
+ul {
+  list-style-position: inside;
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: yellowgreen;
+}
+
+.nav__logo, 
+.nav__link {
+  white-space: nowrap;
+  transition: color 0.4s, opacity 0.4s;
+}
+
+.nav__logo:hover, 
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  border: none;
+  background: blueviolet;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
 }
 
 span {
