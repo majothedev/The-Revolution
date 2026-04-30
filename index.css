@@ -157,8 +157,8 @@ img {
 }
 
 .dark-mode-btn:hover {
-  background-color: blueviolet;
-  color: rgb(245, 230, 255);
+  background-color: rgb(245, 235, 255);
+  color: rgb(25, 0, 45);
   border: 2px solid rgb(35, 0, 70);
   cursor: pointer;
 }
@@ -195,7 +195,7 @@ img {
 }
 
 .heading-1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .heading-2 .experience {
@@ -235,6 +235,12 @@ img {
 }
 
 .conclusion-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.contact-heading {
+  margin-top: 90px;
   margin-bottom: 10px;
   font-size: 40px;
 }
