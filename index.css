@@ -139,7 +139,7 @@ a {
 }
 
 /* IMAGE */
-img {
+.pic-image {
  border: 3px solid blueviolet;
  border-radius: 20px;
 }
@@ -324,4 +324,24 @@ img {
     opacity: 1;
     pointer-events: initial;
   }
+}
+
+
+/* CONTACT CARD */
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid rebeccapurple;
+  padding: 10px 18px;
+  width: 400px;
+}
+
+
+
+
+
+/* CONTACT ICONS AND LOGOS */
+.contact-icons {
+  width: 30px;
 }
