@@ -1,4 +1,7 @@
 
+
+
+
 /* BASE STYLES */
 html {
   scroll-behavior: smooth;
@@ -33,13 +36,6 @@ ol {
   font-size: 20px;
 }
 
-/* li {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-right: 35px
-} */
-
 .lists {
   text-align: center;
   justify-content: center;
@@ -47,10 +43,16 @@ ol {
   margin-right: 35px
 }
 
+
+
+
+
 /* LINK STYLES */
 a {
   text-decoration: none;
 }
+
+
 
 
 
@@ -138,11 +140,16 @@ a {
   background-color: rgb(245, 235, 255);
 }
 
+
+
 /* IMAGE */
 .pic-image {
  border: 3px solid blueviolet;
  border-radius: 20px;
 }
+
+
+
 
 
 /* DARK MODE BUTTON */
@@ -247,6 +254,9 @@ a {
 
 
 
+
+
+
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
   .nav__menu {
@@ -268,6 +278,10 @@ a {
   }
 }
 
+
+
+
+
 /* FOR MEDIUM DEVICES */
 @media (width >= 540px) {
   .header,
@@ -276,6 +290,7 @@ a {
     margin-inline: auto;
   }
 }
+
 
 /* FOR LARGE DEVICES */
 @media (width >= 1150px) {

@@ -1,4 +1,7 @@
 
+
+
+
 /* BASE STYLES */
 html {
   scroll-behavior: smooth;
@@ -9,6 +12,10 @@ body {
   background-color: rgb(25, 0, 45);
   color: rgb(245, 230, 255);
   margin: 30px;
+}
+
+p {
+  font-size: 20px;
 }
 
 span {
@@ -25,12 +32,9 @@ ol {
   list-style: none;
 }
 
-/* li {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-right: 35px
-} */
+.body-lists {
+  font-size: 20px;
+}
 
 .lists {
   text-align: center;
@@ -39,11 +43,17 @@ ol {
   margin-right: 35px
 }
 
+
+
+
+
 /* LINK STYLES */
 a {
   text-decoration: none;
   color: rgb(245, 230, 255);
 }
+
+
 
 
 
@@ -130,11 +140,16 @@ a {
   background-color: rgb(245, 235, 255);
 }
 
+
+
 /* IMAGE */
-img {
+.pic-image {
  border: 3px solid blueviolet;
  border-radius: 20px;
 }
+
+
+
 
 
 /* DARK MODE BUTTON */
@@ -186,9 +201,59 @@ img {
   margin-bottom: 0px;
 }
 
+.heading-1{
+  font-size: 42px;
+}
+
 .heading-2 .experience {
   margin-top: 0px;
 }
+
+.hobbies-heading {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.artist-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.football-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.songs-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.friend-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.goals-heading {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.conclusion-heading {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.contact-heading {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+
+
 
 
 
@@ -213,6 +278,10 @@ img {
   }
 }
 
+
+
+
+
 /* FOR MEDIUM DEVICES */
 @media (width >= 540px) {
   .header,
@@ -221,6 +290,7 @@ img {
     margin-inline: auto;
   }
 }
+
 
 /* FOR LARGE DEVICES */
 @media (width >= 1150px) {
@@ -269,4 +339,26 @@ img {
     opacity: 1;
     pointer-events: initial;
   }
+}
+
+
+/* CONTACT CARD */
+.contact-card {
+  background-color: rgb(165, 65, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid rebeccapurple;
+  border-radius: 18px;
+  padding: 10px 18px;
+  width: 200px;
+}
+
+
+
+
+
+/* CONTACT ICONS AND LOGOS */
+.contact-icons {
+  width: 30px;
 }
