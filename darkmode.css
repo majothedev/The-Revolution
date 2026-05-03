@@ -158,7 +158,7 @@ a {
   color: rgb(245, 230, 255);
   border: 2px solid rgb(165, 65, 255);
   border-radius: 20px;
-  margin-top: 8px;
+  margin-top: 0;
   padding: 10px 20px;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
