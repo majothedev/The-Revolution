@@ -1,3 +1,7 @@
+
+
+
+
 function darkMode() {
   let theme = document.getElementById("theme-style");
   
@@ -6,8 +10,14 @@ function darkMode() {
   } else {
     theme.setAttribute("href", "index.css");
   }
-}
 
+  let darkModeBtn = document.getElementsByClassName("dark-mode-btn")[0];
+  if (theme.getAttribute("href") === "darkmode.css") {
+    darkModeBtn.innerHTML = "Light Mode";
+  } else {
+    darkModeBtn.innerHTML = "Dark Mode";
+  }
+}
 
 
 
@@ -24,12 +34,17 @@ if (navToggle) {
   })
 }
 
+
+
+
 // HIDE MENU
 if (navClose) {
   navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
   })
 }
+
+
 
 
 // REMOVE MENU MOBILE
@@ -42,6 +57,10 @@ const linkAction = () => {
 }
 
 navLink.forEach(n => n.addEventListener("click", linkAction))
+
+
+
+
 
 // NAVBAR SCROLL EFFECT
 
@@ -62,6 +81,4 @@ const scrollNav = () => {
   lastScroll =currentScroll
 }
 window.addEventListener("scroll", scrollNav)
-
-
 
