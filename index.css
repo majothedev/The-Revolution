@@ -11,7 +11,7 @@ body {
   font-family: 'Bricolage Grotesque', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(245, 235, 255);
   color: rgb(25, 0, 45);
-  margin: 30px;
+  margin: 0;
 }
 
 p {
@@ -360,4 +360,25 @@ a {
 /* CONTACT ICONS AND LOGOS */
 .contact-icons {
   width: 30px;
+  transition: ease-in-out 0.5s;
+}
+
+.contact-icons:hover {
+  transform: scale(1.25);
+}
+
+/* FOOTER */
+.footer-div {
+  background-color: rgb(35, 0, 70);
+  color: rgb(245, 235, 255);
+  height: 25px;
+  padding: 1rem;
+  margin: 50px 0 0 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-div p {
+  margin: 0;
+  font-size: 20px;
 }
