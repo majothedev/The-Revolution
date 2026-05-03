@@ -76,7 +76,7 @@ a {
   right: 1rem;
   box-shadow: 0 2px 16px hsla(220, 90%, 8%, 0.3);
   overflow: hidden;
-  transition: width 0.4s;
+  transition: width 0.5s;
 }
 
 .nav {
@@ -90,7 +90,7 @@ a {
 .nav__link {
   color: rgb(250, 245, 255);
   white-space: nowrap;
-  transition: color 0.4s, opacity 0.4s;
+  transition: color 0.5s, opacity 0.5s;
 }
 
 .nav__logo:hover, 
@@ -133,6 +133,7 @@ a {
   padding: 1rem 2rem;
   border-radius: 4rem;
   margin-inline: auto;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .nav__button:hover {
@@ -160,7 +161,7 @@ a {
   border-radius: 20px;
   margin-top: 0;
   padding: 10px 20px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 .dark-mode-btn:hover {
@@ -180,7 +181,7 @@ a {
   border-radius: 20px;
   margin-top: 8px;
   padding: 8px 12px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 .pic-btn:hover {
