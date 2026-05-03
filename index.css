@@ -257,7 +257,6 @@ a {
 
 
 
-
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
   .nav__menu {
@@ -383,3 +382,13 @@ a {
   margin: 0;
   font-size: 20px;
 }
+
+
+
+
+
+.goals-div p {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
