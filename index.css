@@ -147,6 +147,8 @@ a {
 .pic-image {
  border: 3px solid blueviolet;
  border-radius: 20px;
+ width: 300px;
+ height: 397.5px;
 }
 
 
@@ -161,7 +163,8 @@ a {
   border-radius: 20px;
   margin-top: 0;
   padding: 10px 20px;
-  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  /* transition: background-color 0.5s, color 0.5s, border-color 0.5s; */
+  transition: ease-in-out 0.25s;
 }
 
 .dark-mode-btn:hover {
@@ -169,6 +172,7 @@ a {
   color: rgb(25, 0, 45);
   border: 2px solid rgb(35, 0, 70);
   cursor: pointer;
+  transform: scale(1.125);
 }
 
 
@@ -179,9 +183,9 @@ a {
   color: blueviolet;
   border: 2px solid blueviolet;
   border-radius: 20px;
-  margin-top: 10px;
   padding: 8px 12px;
-  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  /* transition: background-color 0.5s, color 0.5s, border-color 0.5s; */
+  transition: ease-in-out 0.25s;
 }
 
 .pic-btn:hover {
@@ -189,6 +193,7 @@ a {
   color: rgb(245, 235, 255);
   border: 2px solid rgb(35, 0, 70);
   cursor: pointer;
+  transform: scale(1.125);
 }
 
 
@@ -338,6 +343,44 @@ a {
   .scroll-nav .nav__button {
     opacity: 1;
     pointer-events: initial;
+  }
+
+  /* HORIZONTAL ALIGNMENT */
+  .home-div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .home-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .heading-1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+
+  .heading-2 {
+    margin-top: 0px;
+  }
+
+  .role {
+    margin-bottom: 5px;
+  }
+
+  .experience {
+    font-size: 16px;
+    margin-top: 0;
   }
 }
 
