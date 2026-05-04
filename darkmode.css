@@ -344,6 +344,44 @@ a {
     opacity: 1;
     pointer-events: initial;
   }
+
+  /* HORIZONTAL ALIGNMENT */
+  .home-div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .home-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .heading-1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+
+  .heading-2 {
+    margin-top: 0px;
+  }
+
+  .role {
+    margin-bottom: 5px;
+  }
+
+  .experience {
+    font-size: 16px;
+    margin-top: 0;
+  }
 }
 
 
@@ -372,6 +410,12 @@ a {
   transform: scale(1.25);
 }
 
+.github-icon {
+  background-color: rgb(245, 235, 255);
+  padding: 4px;
+  border-radius: 100%;
+}
+
 /* FOOTER */
 .footer-div {
   background-color: rgb(165, 65, 255);
@@ -388,9 +432,7 @@ a {
   font-size: 20px;
 }
 
-
-
-
+/* SOME HEADING TEXT FOR THE GOALS & FRIEND SECTION */
 .goals-div p {
   margin-left: 10px;
   margin-right: 10px;
