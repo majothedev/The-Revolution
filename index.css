@@ -262,6 +262,17 @@ a {
 
 
 
+/* HOBBIES SECTION */
+.hobbies-image {
+  border: 3px solid blueviolet;
+  border-radius: 20px;
+  width: 200px;
+}
+
+
+
+
+
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
   .nav__menu {
