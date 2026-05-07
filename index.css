@@ -272,7 +272,6 @@ a {
 
 
 
-
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
   .nav__menu {
@@ -396,16 +395,17 @@ a {
 
   .hobbies-heading {
     margin-top: 0px;
+    font-size: 45px;
   }
 
     /* HOBBIES SECTION */
   .hobbies-div {
-    margin-top: 20px;
+    margin-top: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 200px;
   }
 
   .hobbies-image {
@@ -434,6 +434,10 @@ a {
 
   .image-flex-02 {
     gap: 20px;
+  }
+
+  .lists {
+    font-size: 30px;
   }
 }
 
