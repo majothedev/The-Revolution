@@ -272,6 +272,28 @@ a {
 
 
 
+/* ARTISTS SECTION */
+.artist-div {
+  margin-top: 60px;
+}
+
+.artist-pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.artist-img {
+  border: 3px solid blueviolet;
+  border-radius: 20px;
+  width: 140px;
+}
+
+
+
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
   .nav__menu {
@@ -411,7 +433,7 @@ a {
   .hobbies-image {
     border: 3px solid blueviolet;
     border-radius: 20px;
-    width: 200px;
+    width: 250px;
   }
   .image-flex {
     display: flex;
@@ -443,7 +465,58 @@ a {
 
 
   /* ARTISTS SECTION */
+  .artist-div {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .artist-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .artist-heading {
+    font-size: 45px;
+  }
+
+  .artist-pictures {
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+  }
+
+  .artist-img {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    transition: ease-in-out 0.25s;
+  }
+
+  .artist-img:hover {
+    transform: scale(1.05);
+  }
   
+  .yeat-img {
+    height: 280px;
+    width: 240px;
+  }
+
+  .quavo-img {
+    height: 240px;
+    width: 190px;
+  }
+
+  .rema-img {
+    height: 200px;
+  }
 }
 
 
