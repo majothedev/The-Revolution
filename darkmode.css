@@ -142,7 +142,6 @@ a {
 }
 
 
-
 /* IMAGE */
 .pic-image {
   border: 3px solid blueviolet;
@@ -150,8 +149,6 @@ a {
   width: 300px;
   height: 397.5px;
 }
-
-
 
 
 
@@ -163,7 +160,6 @@ a {
   border-radius: 20px;
   margin-top: 0;
   padding: 10px 20px;
-  /* transition: background-color 0.5s, color 0.5s, border-color 0.5s; */
   transition: ease-in-out 0.25s;
 }
 
@@ -174,7 +170,6 @@ a {
   cursor: pointer;
   transform: scale(1.125);
 }
-
 
 
 /* DOWNLOAD PICTURE BUTTON */
@@ -257,10 +252,45 @@ a {
   font-size: 30px;
 }
 
+/* HOME BUTTONS */
+  .home-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+/* HOBBIES SECTION */
+.hobbies-image {
+  border: 3px solid blueviolet;
+  border-radius: 20px;
+  width: 200px;
+}
 
 
 
 
+/* ARTISTS SECTION */
+.artist-div {
+  margin-top: 60px;
+}
+
+.artist-pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.artist-img {
+  border: 3px solid blueviolet;
+  border-radius: 20px;
+  width: 100px;
+}
 
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
@@ -382,8 +412,110 @@ a {
     font-size: 16px;
     margin-top: 0;
   }
-}
 
+  .hobbies-heading {
+    margin-top: 0px;
+    font-size: 45px;
+  }
+
+    /* HOBBIES SECTION */
+  .hobbies-div {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .hobbies-image {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    width: 250px;
+  }
+  .image-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .image-flex-01, .image-flex-02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image-flex-01 {
+    gap: 20px;
+  }
+
+  .image-flex-02 {
+    gap: 20px;
+  }
+
+  .lists {
+    font-size: 30px;
+  }
+
+
+
+  /* ARTISTS SECTION */
+  .artist-div {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .artist-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .artist-heading {
+    font-size: 45px;
+  }
+
+  .artist-pictures {
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+  }
+
+  .artist-img {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    transition: ease-in-out 0.25s;
+  }
+
+  .artist-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .yeat-img {
+    height: 280px;
+    width: 240px;
+  }
+
+  .quavo-img {
+    height: 240px;
+    width: 190px;
+  }
+
+  .rema-img {
+    height: 200px;
+  }
+}
 
 /* CONTACT CARD */
 .contact-card {
@@ -431,6 +563,9 @@ a {
   margin: 0;
   font-size: 20px;
 }
+
+
+
 
 /* SOME HEADING TEXT FOR THE GOALS & FRIEND SECTION */
 .goals-div p {

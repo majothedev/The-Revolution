@@ -142,7 +142,6 @@ a {
 }
 
 
-
 /* IMAGE */
 .pic-image {
  border: 3px solid blueviolet;
@@ -150,8 +149,6 @@ a {
  width: 300px;
  height: 397.5px;
 }
-
-
 
 
 
@@ -163,7 +160,6 @@ a {
   border-radius: 20px;
   margin-top: 0;
   padding: 10px 20px;
-  /* transition: background-color 0.5s, color 0.5s, border-color 0.5s; */
   transition: ease-in-out 0.25s;
 }
 
@@ -176,7 +172,6 @@ a {
 }
 
 
-
 /* DOWNLOAD PICTURE BUTTON */
 .pic-btn {
   background-color: rgb(250, 245, 255);
@@ -184,7 +179,6 @@ a {
   border: 2px solid blueviolet;
   border-radius: 20px;
   padding: 8px 12px;
-  /* transition: background-color 0.5s, color 0.5s, border-color 0.5s; */
   transition: ease-in-out 0.25s;
 }
 
@@ -258,9 +252,15 @@ a {
   font-size: 30px;
 }
 
-
-
-
+/* HOME BUTTONS */
+  .home-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
 
 /* HOBBIES SECTION */
 .hobbies-image {
@@ -291,8 +291,6 @@ a {
   border-radius: 20px;
   width: 100px;
 }
-
-
 
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
@@ -519,7 +517,6 @@ a {
   }
 }
 
-
 /* CONTACT CARD */
 .contact-card {
   display: flex;
@@ -562,6 +559,9 @@ a {
 }
 
 
+
+
+
 /* SOME HEADING TEXT FOR THE GOALS & FRIEND SECTION */
 .goals-div p {
   margin-left: 10px;
@@ -572,3 +572,4 @@ a {
   margin-left: 10px;
   margin-right: 10px;
 }
+
