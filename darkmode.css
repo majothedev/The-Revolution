@@ -307,6 +307,10 @@ a {
   transition: ease-in-out 0.25s;
 }
 
+.football-img:hover {
+  transform: scale(1.05);
+}
+
 .psg-img {
   width: 200px;
 }
