@@ -292,6 +292,29 @@ a {
   width: 100px;
 }
 
+/* FOOTBALL SECTION */
+.football-pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.football-img {
+  border-radius: 100%;
+  border: 3px solid blueviolet;
+  transition: ease-in-out 0.25s;
+}
+
+.psg-img {
+  width: 200px;
+}
+
+.chelsea-img {
+  width: 150px;
+}
+
 /* NAVIGATION FOR MOBILE DEVICES */
 @media (width <= 1150px) {
   .nav__menu {
@@ -484,7 +507,7 @@ a {
   }
 
   .artist-pictures {
-    width: 610px;
+    /* width: 610px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -514,6 +537,49 @@ a {
 
   .rema-img {
     height: 200px;
+    width: 150px;
+  }
+
+
+  /* FOOTBALL DIV */
+  .football-heading {
+    font-size: 45px;
+  }
+
+  .football-div {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .football-pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+  }
+
+  .football-img {
+    width: 200px;
+    border-radius: 100%;
+    border: 3px solid blueviolet;
+    transition: ease-in-out 0.25s;
+  }
+
+  .football-img:hover {
+    transform: scale(1.05);
+  }
+
+  .psg-img {
+    width: 200px;
+  }
+
+  .chelsea-img {
+    width: 150px;
   }
 }
 
